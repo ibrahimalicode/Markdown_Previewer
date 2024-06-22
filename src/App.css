@@ -1,0 +1,38 @@
+.markdown-previewer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+}
+
+#editor,
+#preview {
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 16px;
+}
+
+#editor {
+  margin-right: 10px;
+}
+
+#preview {
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .markdown-previewer {
+    flex-direction: column;
+  }
+
+  #editor,
+  #preview {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
